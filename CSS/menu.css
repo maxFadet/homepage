@@ -1,0 +1,44 @@
+.mainTitle {
+    background-color:#2e1114;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    font-weight: normal;
+	position: relative;
+	box-shadow: 0px 0px 12px 0px #adadad;
+}
+
+.mainTitleLarge {
+    background-color:#2e1114;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    font-weight: normal;
+	position: relative;
+	box-shadow: 0px 0px 76px 0px #adadad;
+}
+
+
+.mainContent__subTitle {
+    color: #adadad;
+    text-align: center;
+    margin: 50px;
+    font-weight: normal;
+}
+
+.mainContent__article {
+    color: black;
+    margin: 20px;
+    padding: 30px;
+    background-color: #ADADAD;
+    border-radius: 0px 30px 30px 30px;
+}
+
+.mainContent__nameLinkContact {
+    color: #764368;
+    text-decoration: none;
+}

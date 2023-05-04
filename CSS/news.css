@@ -1,0 +1,29 @@
+.newsTitle {
+    color: #adadad;
+    text-align: center;
+    margin: 50px;
+    font-weight: normal;
+
+}
+
+.newsContent {
+    max-width: 405px;
+    background-color: #83677B;;
+    margin: 20px;
+    padding: 20px;
+    border:10px rgb(173 173 173) outset;
+}
+
+.newsContent__subTitle {
+    text-align: center;
+}
+
+.newsContent__article--datePublication {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.newsContent__linkOutside {
+ text-decoration: none;
+   color: #ADADAD;
+}

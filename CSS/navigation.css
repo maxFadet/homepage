@@ -1,0 +1,35 @@
+
+.navigation__item {
+    margin: 10px;
+}
+
+.navigation__list {
+   
+    list-style: none;
+}
+
+.navigation {
+background-color: #2E1114;
+color:  #64485C;
+margin: 20px;
+padding: 20px;
+}
+
+.navigation__link {
+    color: #adadad;
+    text-decoration: none;
+}
+
+.navigation__link:hover{
+    color: rgb(229, 234, 165);
+}
+
+.mainContact__nameLinkContact {
+    color: #764368;
+    text-decoration: none;
+}
+
+.mainContact__nameLinkContact:hover{
+    color: rgb(229, 234, 165);
+}
+

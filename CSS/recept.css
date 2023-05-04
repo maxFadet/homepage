@@ -1,0 +1,16 @@
+.receptTitle {
+     color: #adadad;
+    text-align: center;
+    margin: 50px;
+    font-weight: normal;
+}
+
+
+.buttonBack {
+    text-decoration: none;
+    color: rgb(229, 234, 165);
+} 
+
+.buttonBackPosition {
+text-align: center;
+}

@@ -1,0 +1,100 @@
+.mainInformation {
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 85px;
+}
+
+.mainInformation__headerTitle {
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    font-weight: normal;
+}
+
+.mainInformation__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 30px;
+    background-color: #212227;
+    border-radius: 30px;
+    box-shadow: 0 0.25rem 3.75rem rgba(0,0,0,.4); 
+}
+
+.mainInformation__subContainer {
+    flex-basis: 347px;
+}
+
+.mainInformation__subTitle {
+    text-align: center;
+    margin: 20px;
+    font-weight: normal;
+    
+}
+
+.mainInformation__subTitle--indentTop {
+    margin: 50px;
+}
+
+.mainInformation__subTitle--otherColor {
+    color:#2766ae;
+}
+
+
+.mainInformation__content {
+    text-indent: 30px;
+    text-align: justify;
+    /* background-image: radial-gradient( #2766ae  #212227); */
+}
+
+.mainInformation__outContent {
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    text-indent: 30px;
+    margin: 100px auto;
+    max-width: 500px;
+    line-height: 2.3;
+    
+}
+
+.mainInformation__image { 
+    width: 270px;
+    border-radius: 30px;
+}
+
+.mainInformation__image {
+    /* background: radial-gradient(circle, #2766ae 0%, #1f3349 29%, rgb(33 34 39) 70%); */
+    background: radial-gradient(circle, #d6da1e9e 0%, #424213 29%, rgb(33 34 39) 70%);
+}
+
+.mainInformation__table {
+    margin: 0 auto;
+    border-collapse: collapse; 
+    width: 100%;
+    background-color: #16171b;
+    border: 2px #16171b solid;
+}
+
+.mainInformation__tableCaption {
+    margin: 20px;
+    font-size: 26px;
+ }
+
+ .mainInformation__tableCell {
+    border: 1px solid rgb(63 65 71);
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.mainInformation__tableCell--tableHeader {
+    background-color:  #11193733;
+    font-weight: normal;
+    padding: 15px;
+}

@@ -1,0 +1,41 @@
+.navigation {
+    max-width: 100%;
+    padding: 5px;
+    font-size: 22px;
+    font-weight: 700;
+    background: linear-gradient(180deg,#000,transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.navigation__list {
+    display: block;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navigation__item {
+    margin: 10px;
+}
+
+.navigation__link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navigation__link:hover{
+    color: #2766ae;
+}
+
+.buttonMenuResize {
+    border: none;
+    background: #424242;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.imageMenu {
+    width: 30px;
+}

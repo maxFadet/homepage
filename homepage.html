@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="JS/javascript.js"></script>
+    <link href="CSS/styli.css" rel="stylesheet">
+    <link href="CSS/navigation.css" rel="stylesheet">
+    <link href="CSS/mainInformation.css" rel="stylesheet">
+    <link href="CSS/secondaryInformation.css" rel="stylesheet">
+    <link href="CSS/table.css" rel="stylesheet">
+    <link href="CSS/gallery.css" rel="stylesheet">
+    <link href="CSS/recept.css" rel="stylesheet">
+    <link href="CSS/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Blog Maksa</title>
+    <meta property="og:image" content="image/homepage_share.png">
+    <link rel="icon" href="image/homepage_favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bodyStyle">
+    <!-- navigation -->
+    <nav id="начало-страницы" class="navigation">
+        <ul class="navigation__list js-navigationList">
+            <li class="navigation__item"><a href="#about_me" class="navigation__link">About me</a>
+            </li>
+            <li class="navigation__item"><a href="#my_hobbies" class="navigation__link">My hobbies</a>
+            </li>
+            <li class="navigation__item"><a href="#cooking_recipes" class="navigation__link">Cooking recipes</a>
+            </li>
+            <li class="navigation__item"><button class="js-buttonTheme">Включи <span
+                        class="js-changesWord">светлую</span> тему</button>
+            </li>
+        </ul>
+    </nav>
+    <div><button class="buttonMenuResize js-buttonMenu"><img class="imageMenu" src="image/interface-setting-menu.png"
+                alt="#"></button> </div>
+    <!-- main information -->
+
+    <main>
+        <div class="mainInformation">
+            <header class="mainInformation__header">
+                <h1 class="mainInformation__headerTitle">My blog</h1>
+                <p class="mainInformation__outContent">"Welcome to my website. This is my blog. I will be glad to share
+                    information about myself and also
+                    take such a wonderful opportunity to show my knowledge in practice on this site. Of course I mean
+                    Frontend development."</p>
+            </header>
+            <article id="about_me" class="mainInformation__container">
+                <div class="mainInformation__subContainer">
+                    <h2 class="mainInformation__subTitle">About me</h2>
+                    <p class="mainInformation__content">My name is Max. I am 29 years old. I live in Poland, Warsaw. In
+                        my spare time I spend time with my wife, drink coffee in Starbucks, walk in the park, shopping.
+                        I have a license Forklift truck operator. Do not work at the moment. I work hard to learn the
+                        basics of frontend development. This is my first experience in this field. Since I am a creative
+                        person so I have chosen this path. 
+                    </p>
+                </div>
+                <p><img class="mainInformation__image" src="image/in_centre_of_city.jpg" alt="в старом городе"></p>
+            </article>
+
+            <section class="mainInformation__myHobbies">
+                <h2 id="my_hobbies" class="mainInformation__subTitle mainInformation__subTitle--indentTop">My hobbies
+                </h2>
+                <div class="mainInformation__container">
+                    <div class="mainInformation__subContainer">
+                        <table class="mainInformation__table">
+                            <caption class="mainInformation__tableCaption">My skills</caption>
+                            <tr class="mainInformation__tableRow">
+                                <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
+                                    scope="col">Skill</th>
+                                <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
+                                    scope="col">Level</th>
+                            </tr>
+                            <tr class="mainInformation__tableRow">
+                                <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
+                                    scope="row">English</th>
+                                <td class="mainInformation__tableCell">3 szt</td>
+                            </tr>
+                            <tr class="mainInformation__tableRow">
+                                <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
+                                    scope="row">Polish</th>
+                                <td class="mainInformation__tableCell">3 szt</td>
+                            </tr>
+                            <tr class="mainInformation__tableRow">
+                                <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
+                                    scope="row">Russian</th>
+                                <td class="mainInformation__tableCell">1 szt</td>
+                            </tr>
+                            <tr class="mainInformation__tableRow">
+                                <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
+                                    scope="row">My PC knowledge
+                                </th>
+                                <td class="mainInformation__tableCell">1 szt</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="mainInformation__subContainer">
+                        <p class="mainInformation__content">
+                            Макс. 29 лет. Беларус. Живу в Польше, Варшаве. Начинаю блог в апреле 2023.
+                            Начинаю его как один из проктов для подготовки к окончанию курса специальности Fronted
+                            developer.
+                            На данном этапе я заканичаю 3 модуль курса. 5 месяцев назад была первая попытка пройти курс.
+                            Остановился
+                            на
+                            4 модуле.
+                            Курс куплен 22.09.2022 у опытного специалста за 2895 злотых(+-600$). У меня есть свой личный
+                            аккаунт
+                            на
+                            его
+                            платформе. Ссылка ниже.</p>
+                        <p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="secondaryInformation">
+            <section class="secondaryInformation__musicSection">
+                <p class="secondaryInformation__video">
+                    <video class="video"  controls preload="auto" width="480" poster="image/poster.jpg">
+                        <source src="video/The Blister Exists (WFF, Live 2004).webm" type="video/webm">
+                        Your browser does not support embedded videos :(
+                    </video>
+                </p>
+
+                <p class="secondaryInformation__text">
+                    Музыка - есть мое вдохновение.Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+                    explicabo consequatur quasi iure consequuntur fuga sed distinctio deserunt eius, debitis facilis,
+                    adipisci magni laboriosam vero aliquam quos voluptates possimus fugiat!</p>
+                <div class="mainInformation__subContainer">
+                    <table class="mainInformation__table">
+                        <caption class="mainInformation__tableCaption">My favorite bands</caption>
+                        <tr class="mainInformation__tableRow">
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="col">
+                                Name</th>
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="col">
+                                Top songs</th>
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="col">
+                                Album</th>
+                        </tr>
+                        <tr class="mainInformation__tableRow">
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
+                                Slipknot</th>
+                            <td class="mainInformation__tableCell">Duality</td>
+                            <td class="mainInformation__tableCell">The Subliminal Verses</td>
+                        </tr>
+                        <tr class="mainInformation__tableRow">
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
+                                Korn</th>
+                            <td class="mainInformation__tableCell">It's on</td>
+                            <td class="mainInformation__tableCell">Follow The Leaders</td>
+                        </tr>
+                        <tr class="mainInformation__tableRow">
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
+                                Nirvana</th>
+                            <td class="mainInformation__tableCell">Lithium</td>
+                            <td class="mainInformation__tableCell">Nevermind</td>
+                        </tr>
+                        <tr class="mainInformation__tableRow">
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
+                                Lorna Shore
+                            </th>
+                            <td class="mainInformation__tableCell">Immortal</td>
+                            <td class="mainInformation__tableCell">Immortal</td>
+                        </tr>
+                        <tr class="mainInformation__tableRow">
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
+                                Signs Of The Swarm
+                            </th>
+                            <td class="mainInformation__tableCell">Cesspool of Ignorance</td>
+                            <td class="mainInformation__tableCell">
+                                The Disfigurement of Existence
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </div>
+        <div class="mainInformation">
+            <article id="about_me" class="mainInformation__container">
+                <div class="mainInformation__subContainer">
+                    <h2 class="mainInformation__subTitle mainInformation__subTitle--otherColor">What would I be without
+                        spiritual practices?</h2>
+                    <p class="mainInformation__content">
+                        I like doing yoga and meditation. It makes me more focused and stress-resistant and helps me not
+                        get distracted by unnecessary things. Self-control allows us to be more conscious. It affects
+                        our behavior in society, work, leisure and many aspects of life. So I recommend it to everyone.
+                    </p>
+                </div>
+                <p class="mainInformation__content"><img class="mainInformation__image" src="image/yoga-meditate.png"
+                        alt="meditation"></p>
+            </article>
+        </div>
+        <div class="mainInformation">
+            <img>
+            <article id="about_me" class="mainInformation__container">
+                <div class="mainInformation__subContainer">
+                    <table class="mainInformation__table">
+                        <caption class="mainInformation__tableCaption">My favorite recipes</caption>
+                        <tr class="mainInformation__tableRow">
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="col">
+                                Menu</th>
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="col">
+                                Simplicity of cooking</th>
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="col">
+                                Cooking time</th>
+                        </tr>
+                        <tr class="mainInformation__tableRow">
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
+                                Cheesecake</th>
+                            <td class="mainInformation__tableCell">Normal</td>
+                            <td class="mainInformation__tableCell">1 hour</td>
+                        </tr>
+                        <tr class="mainInformation__tableRow">
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
+                                "Scharlotka"</th>
+                            <td class="mainInformation__tableCell">Easy</td>
+                            <td class="mainInformation__tableCell">1 hour</td>
+                        </tr>
+                        <tr class="mainInformation__tableRow">
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
+                                Thin pancakes</th>
+                            <td class="mainInformation__tableCell">Easy</td>
+                            <td class="mainInformation__tableCell">30 min</td>
+                        </tr>
+                        <tr class="mainInformation__tableRow">
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
+                                Cake "Pani Walewska"
+                            </th>
+                            <td class="mainInformation__tableCell">Hard</td>
+                            <td class="mainInformation__tableCell">2 hours</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="mainInformation__subContainer">
+                    <h2 class="mainInformation__subTitle mainInformation__subTitle--otherColor">My culinary passion</h2>
+                    <p class="mainInformation__content">
+                        I like to cook. I enjoy not only the result, but also the process. I like to try cooking with
+                        new
+                        recipes I've found. And since I like to cook more desserts I present the top 3 best recipes. The
+                        dishes are trivial but not everyone makes them right.</p>
+                </div>
+            </article>
+        </div>
+        <div class="secondaryInformation">
+            <section class="secondaryInformation__musicSection">
+                <p class="secondaryInformation__text">
+                    <img class="secondaryInformation__image" src="image/font-for-chescake.jpg" alt="meditation">
+                </p>
+
+                <p class="secondaryInformation__text">
+                    Музыка - есть мое вдохновение.Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+                    explicabo consequatur quasi iure consequuntur fuga sed distinctio deserunt eius, debitis facilis,
+                    adipisci magni laboriosam vero aliquam quos voluptates possimus fugiat!</p>
+                </section>
+            </div>
+            
+            
+    </main>
+
+    <footer>
+        <p class="buttonBackPosition">
+            <a href="#начало-страницы" class="buttonBack">Вернутсья вначало</a>
+        </p>
+        <p class="footer">Design by maxFadet</p>
+    </footer>
+</body>
+
+</html>

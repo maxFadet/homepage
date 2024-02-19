@@ -1,0 +1,14 @@
+.galleryTitle {
+    color: #adadad;
+    text-align: center;
+    margin: 50px;
+    font-weight: normal;
+}
+
+.gallery {
+    padding-left: 20px;
+}
+
+.gallery__image {
+    width: 270px;
+}

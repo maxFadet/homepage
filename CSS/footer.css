@@ -1,7 +1,21 @@
-.footer {
-    color: rgb(92, 92, 92);
-    margin: 20px;
-    padding: 30px;
-    background-color: #ADADAD;
+.bottomSide__container {
     text-align: center;
+    }
+
+.bottomSide__container--supreme {
+   color: rgb(92, 92, 92);
+   margin: 0;
+   padding: 30px;
+   background-color: #ADADAD;
+   text-align: center;
+    }
+
+.bottomSide__link {
+    text-decoration: none;
+    color: rgb(229, 234, 165);
+} 
+
+.bottomSide__link--otherView {
+    color: #2766ae;
 }
+

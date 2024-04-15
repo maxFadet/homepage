@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="JS/javascript.js"></script>
-    <link href="CSS/styli.css" rel="stylesheet">
+    <link href="CSS/body.css" rel="stylesheet">
     <link href="CSS/navigation.css" rel="stylesheet">
     <link href="CSS/mainInformation.css" rel="stylesheet">
-    <link href="CSS/secondaryInformation.css" rel="stylesheet">
-    <link href="CSS/table.css" rel="stylesheet">
-    <link href="CSS/gallery.css" rel="stylesheet">
-    <link href="CSS/recept.css" rel="stylesheet">
     <link href="CSS/footer.css" rel="stylesheet">
+    <link href="CSS/hiddenMenuButton.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -27,76 +24,86 @@
 
 </head>
 
-<body class="bodyStyle">
-    <!-- navigation -->
-    <nav id="начало-страницы" class="navigation">
+<body class="body">
+
+    <!-- Navigation -->
+
+    <nav id="top" class="navigation">
         <ul class="navigation__list js-navigationList">
-            <li class="navigation__item"><a href="#about_me" class="navigation__link">About me</a>
+            <li class="navigation__item"><a href="#about-me" class="navigation__link">About me</a>
             </li>
-            <li class="navigation__item"><a href="#my_hobbies" class="navigation__link">My hobbies</a>
+            <li class="navigation__item"><a href="#my-hobbies" class="navigation__link">My hobbies</a>
             </li>
-            <li class="navigation__item"><a href="#cooking_recipes" class="navigation__link">Cooking recipes</a>
+            <li class="navigation__item"><a href="#cooking-recipes" class="navigation__link">Cooking recipes</a>
             </li>
-            <li class="navigation__item"><button class="js-buttonTheme">Включи <span
-                        class="js-changesWord">светлую</span> тему</button>
+            <li class="navigation__item"><button class="navigation__button js-buttonTheme">Switch <span
+                        class="js-changesWord">to light</span> theme</button>
             </li>
         </ul>
     </nav>
-    <div><button class="buttonMenuResize js-buttonMenu"><img class="imageMenu" src="image/interface-setting-menu.png"
-                alt="#"></button> </div>
-    <!-- main information -->
+
+    <!-- Hidden menu button that reveals the menu on small device screens. -->
+
+    <div class="mobileMenu">
+        <button class="mobileMenu__button js-buttonMenu">
+            <img class="mobileMenu__image" src="image/interface-setting-menu.png" alt="icon">
+        </button>
+    </div>
+
+    <!-- Main information -->
 
     <main>
         <div class="mainInformation">
-            <header class="mainInformation__header">
-                <h1 class="mainInformation__headerTitle">My blog</h1>
-                <p class="mainInformation__outContent">"Welcome to my website. This is my blog. I will be glad to share
+            <header class="title">
+                <h1 class="title__name">My blog</h1>
+                <p class="title__text">"Welcome to my website. This is my blog. I will be glad to share
                     information about myself and also
                     take such a wonderful opportunity to show my knowledge in practice on this site. Of course I mean
                     Frontend development."</p>
             </header>
-            <article id="about_me" class="mainInformation__container">
-                <div class="mainInformation__subContainer">
-                    <h2 class="mainInformation__subTitle">About me</h2>
-                    <p class="mainInformation__content">My name is Max. I am 29 years old. I live in Poland, Warsaw. In
+            <article id="about-me" class="mainInformation__container">
+                <div class="mainInformation__TextInConteiner">
+                    <h2 class="mainInformation__conteinerName">About me</h2>
+                    <p class="mainInformation__content">My name is Max. I am 30 years old. I live in Poland, Warsaw. In
                         my spare time I spend time with my wife, drink coffee in Starbucks, walk in the park, shopping.
                         I have a license Forklift truck operator. Do not work at the moment. I work hard to learn the
                         basics of frontend development. This is my first experience in this field. Since I am a creative
                         person so I have chosen this path.
                     </p>
                 </div>
-                <p><img class="mainInformation__image" src="image/in_centre_of_city.jpg" alt="в старом городе"></p>
+                <p><img class="mainInformation__image" src="image/in_centre_of_city.jpg" alt="Stare Miasto"></p>
             </article>
 
-            <section class="mainInformation__myHobbies">
-                <h2 id="my_hobbies" class="mainInformation__subTitle mainInformation__subTitle--indentTop">My hobbies
+            <article>
+                <h2 id="my-hobbies" class="mainInformation__conteinerName mainInformation__conteinerName--indentTop">My
+                    hobbies
                 </h2>
                 <div class="mainInformation__container">
-                    <div class="mainInformation__subContainer">
+                    <div class="mainInformation__TextInConteiner">
                         <table class="mainInformation__table">
                             <caption class="mainInformation__tableCaption">My skills</caption>
-                            <tr class="mainInformation__tableRow">
+                            <tr>
                                 <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
                                     scope="col">Skill</th>
                                 <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
                                     scope="col">Level</th>
                             </tr>
-                            <tr class="mainInformation__tableRow">
+                            <tr>
                                 <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
                                     scope="row">English</th>
                                 <td class="mainInformation__tableCell">3 szt</td>
                             </tr>
-                            <tr class="mainInformation__tableRow">
+                            <tr>
                                 <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
                                     scope="row">Polish</th>
                                 <td class="mainInformation__tableCell">3 szt</td>
                             </tr>
-                            <tr class="mainInformation__tableRow">
+                            <tr>
                                 <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
                                     scope="row">Russian</th>
                                 <td class="mainInformation__tableCell">1 szt</td>
                             </tr>
-                            <tr class="mainInformation__tableRow">
+                            <tr>
                                 <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
                                     scope="row">My PC knowledge
                                 </th>
@@ -104,31 +111,35 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="mainInformation__subContainer">
+                    <div class="mainInformation__TextInConteiner">
                         <p class="mainInformation__content">
-                            
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aspernatur quisquam cumque,
+                            minus tempora distinctio omnis qui sapiente ut? Atque ipsa modi nulla ducimus. Repudiandae
+                            fuga iusto sint reprehenderit ipsa!
                         <p>
                     </div>
                 </div>
-            </section>
+            </article>
         </div>
-        <div class="secondaryInformation">
-            <section class="secondaryInformation__musicSection">
-                <p class="secondaryInformation__video">
-                    <video class="video" controls preload="auto" width="480" poster="image/poster.jpg">
-                        <source src="video/The Blister Exists (WFF, Live 2004).webm" type="video/webm">
+        <div class="mainInformation mainInformation--spaciousBox">
+            <article class="mainInformation__container mainInformation__container--noBorderRadius">
+                <p>
+                    <video class="mainInformation__video" controls preload="auto" width="480" poster="image/poster.jpg">
+                        <source src="video/The-Blister-Exists.webm" type="video/webm">
                         Your browser does not support embedded videos :(
                     </video>
                 </p>
-
-                <p class="secondaryInformation__text">
+                <div class="mainInformation__TextInConteiner">
+                    <h2 class="mainInformation__conteinerName"> My musician passion</h2>
+                    <p class="mainInformation__content"></p>
                     Музыка - есть мое вдохновение.Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
                     explicabo consequatur quasi iure consequuntur fuga sed distinctio deserunt eius, debitis facilis,
-                    adipisci magni laboriosam vero aliquam quos voluptates possimus fugiat!</p>
-                <div class="mainInformation__subContainer">
+                    adipisci magni laboriosam vero aliquam quos voluptates possimus fugiat!
+                </div>
+                <div class="mainInformation__TextInConteiner">
                     <table class="mainInformation__table">
                         <caption class="mainInformation__tableCaption">My favorite bands</caption>
-                        <tr class="mainInformation__tableRow">
+                        <tr>
                             <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="col">
                                 Name</th>
                             <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="col">
@@ -136,32 +147,32 @@
                             <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="col">
                                 Album</th>
                         </tr>
-                        <tr class="mainInformation__tableRow">
+                        <tr>
                             <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
                                 Slipknot</th>
                             <td class="mainInformation__tableCell">Duality</td>
                             <td class="mainInformation__tableCell">The Subliminal Verses</td>
                         </tr>
-                        <tr class="mainInformation__tableRow">
+                        <tr>
                             <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
                                 Korn</th>
                             <td class="mainInformation__tableCell">It's on</td>
                             <td class="mainInformation__tableCell">Follow The Leaders</td>
                         </tr>
-                        <tr class="mainInformation__tableRow">
+                        <tr>
                             <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
                                 Nirvana</th>
                             <td class="mainInformation__tableCell">Lithium</td>
                             <td class="mainInformation__tableCell">Nevermind</td>
                         </tr>
-                        <tr class="mainInformation__tableRow">
+                        <tr>
                             <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
                                 Lorna Shore
                             </th>
                             <td class="mainInformation__tableCell">Immortal</td>
                             <td class="mainInformation__tableCell">Immortal</td>
                         </tr>
-                        <tr class="mainInformation__tableRow">
+                        <tr>
                             <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
                                 Signs Of The Swarm
                             </th>
@@ -172,12 +183,13 @@
                         </tr>
                     </table>
                 </div>
-            </section>
+            </article>
         </div>
         <div class="mainInformation">
-            <article id="about_me" class="mainInformation__container">
-                <div class="mainInformation__subContainer">
-                    <h2 class="mainInformation__subTitle mainInformation__subTitle--otherColor">What would I be without
+            <article class="mainInformation__container">
+                <div class="mainInformation__TextInConteiner">
+                    <h2 class="mainInformation__conteinerName mainInformation__conteinerName--otherColor">What would I
+                        be without
                         spiritual practices?</h2>
                     <p class="mainInformation__content">
                         I like doing yoga and meditation. It makes me more focused and stress-resistant and helps me not
@@ -185,17 +197,15 @@
                         our behavior in society, work, leisure and many aspects of life. So I recommend it to everyone.
                     </p>
                 </div>
-                <p class="mainInformation__content"><img class="mainInformation__image" src="image/yoga-meditate.png"
-                        alt="meditation"></p>
+                <p><img class="mainInformation__image" src="image/yoga-meditate.png" alt="meditation"></p>
             </article>
         </div>
         <div class="mainInformation">
-            <img>
-            <article id="about_me" class="mainInformation__container">
-                <div class="mainInformation__subContainer">
+            <article id="cooking-recipes" class="mainInformation__container">
+                <div class="mainInformation__TextInConteiner">
                     <table class="mainInformation__table">
                         <caption class="mainInformation__tableCaption">My favorite recipes</caption>
-                        <tr class="mainInformation__tableRow">
+                        <tr>
                             <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="col">
                                 Menu</th>
                             <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="col">
@@ -203,25 +213,25 @@
                             <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="col">
                                 Cooking time</th>
                         </tr>
-                        <tr class="mainInformation__tableRow">
+                        <tr>
                             <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
                                 Cheesecake</th>
                             <td class="mainInformation__tableCell">Normal</td>
                             <td class="mainInformation__tableCell">1 hour</td>
                         </tr>
-                        <tr class="mainInformation__tableRow">
+                        <tr>
                             <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
                                 "Scharlotka"</th>
                             <td class="mainInformation__tableCell">Easy</td>
                             <td class="mainInformation__tableCell">1 hour</td>
                         </tr>
-                        <tr class="mainInformation__tableRow">
+                        <tr>
                             <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
                                 Thin pancakes</th>
                             <td class="mainInformation__tableCell">Easy</td>
                             <td class="mainInformation__tableCell">30 min</td>
                         </tr>
-                        <tr class="mainInformation__tableRow">
+                        <tr>
                             <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="row">
                                 Cake "Pani Walewska"
                             </th>
@@ -230,8 +240,9 @@
                         </tr>
                     </table>
                 </div>
-                <div class="mainInformation__subContainer">
-                    <h2 class="mainInformation__subTitle mainInformation__subTitle--otherColor">My culinary passion</h2>
+                <div class="mainInformation__TextInConteiner">
+                    <h2 class="mainInformation__conteinerName mainInformation__conteinerName--otherColor">My culinary
+                        passion</h2>
                     <p class="mainInformation__content">
                         I like to cook. I enjoy not only the result, but also the process. I like to try cooking with
                         new
@@ -240,27 +251,120 @@
                 </div>
             </article>
         </div>
-        <div class="secondaryInformation">
-            <section class="secondaryInformation__musicSection">
-                <p class="secondaryInformation__text">
-                    <img class="secondaryInformation__image" src="image/font-for-chescake.jpg" alt="meditation">
+        <div class="mainInformation mainInformation--spaciousBox">
+            <section class="mainInformation__container mainInformation__container--noBorderRadius">
+                <p>
+                    <img class="mainInformation__image" src="image/font-for-chescake.jpg" alt="chescake">
                 </p>
-
-                <p class="secondaryInformation__text">
-                    Музыка - есть мое вдохновение.Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
-                    explicabo consequatur quasi iure consequuntur fuga sed distinctio deserunt eius, debitis facilis,
-                    adipisci magni laboriosam vero aliquam quos voluptates possimus fugiat!</p>
+                <div class="mainInformation__TextInConteiner">
+                    <h2 class="mainInformation__conteinerName">How to Make Classic Cheesecake</h2>
+                    <ol class="mainInformation__content">
+                        <li class="mainInformation__list mainInformation__list--otherColor">
+                            Mix the crushed cookies with the butter.
+                        </li>
+                        <li class="mainInformation__list">
+                            Press it into the bottom of the mold and place it in the refrigerator.
+                        </li>
+                        <li class="mainInformation__list mainInformation__list--otherColor">
+                            Mix the cheese with eggs, sugar, and salt.
+                        </li>
+                        <li class="mainInformation__list">
+                            Add sour cream, heavy cream, vanilla, lemon juice, cornstarch, and mix well.
+                        </li>
+                        <li class="mainInformation__list mainInformation__list--otherColor">
+                            Pour the prepared mixture into the mold, removing any bubbles.
+                        </li>
+                        <li class="mainInformation__list">
+                            Pour a little water into a baking tray and place our mold in it.
+                        </li>
+                        <li class="mainInformation__list mainInformation__list--otherColor">
+                            Place the baking tray with the cheesecake into a preheated oven at 180° for 30 min.
+                        </li>
+                    </ol>
+                </div>
+                <div class="mainInformation__TextInConteiner">
+                    <table class="mainInformation__table">
+                        <caption class="mainInformation__tableCaption">Ingredients</caption>
+                        <tr>
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="col">
+                                Product</th>
+                            <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader" scope="col">
+                                Quanity</th>
+                        </tr>
+                        <tr>
+                            <td class="mainInformation__tableCell">
+                                Clarified butter</td>
+                            <td class="mainInformation__tableCell">40g</td>
+                        </tr>
+                        <tr>
+                            <td class="mainInformation__tableCell">
+                                Whole grain cookies</td>
+                            <td class="mainInformation__tableCell">104g</td>
+                        </tr>
+                        <tr>
+                            <td class="mainInformation__tableCell">
+                                Cream cheese</td>
+                            <td class="mainInformation__tableCell">400g</td>
+                        </tr>
+                        <tr>
+                            <td class="mainInformation__tableCell">
+                                Sour cream</td>
+                            <td class="mainInformation__tableCell">200g</td>
+                        </tr>
+                        <tr>
+                            <td class="mainInformation__tableCell">
+                                Heavy cream</td>
+                            <td class="mainInformation__tableCell">80g</td>
+                        </tr>
+                        <tr>
+                            <td class="mainInformation__tableCell">
+                                Salt</td>
+                            <td class="mainInformation__tableCell">A pinch</td>
+                        </tr>
+                        <tr>
+                            <td class="mainInformation__tableCell">
+                                Sugar</td>
+                            <td class="mainInformation__tableCell">80g</td>
+                        </tr>
+                        <tr>
+                            <td class="mainInformation__tableCell">
+                                Eggs</td>
+                            <td class="mainInformation__tableCell">2</td>
+                        </tr>
+                        <tr>
+                            <td class="mainInformation__tableCell">
+                                Lemon juice</td>
+                            <td class="mainInformation__tableCell">1.5tbsp</td>
+                        </tr>
+                        <tr>
+                            <td class="mainInformation__tableCell">
+                                Vanilla extract</td>
+                            <td class="mainInformation__tableCell">1tsp</td>
+                        </tr>
+                        <tr>
+                            <td class="mainInformation__tableCell">
+                                Cornstarch powder</td>
+                            <td class="mainInformation__tableCell">30g</td>
+                        </tr>
+                    </table>
+                </div>
             </section>
         </div>
-
-
     </main>
 
-    <footer>
-        <p class="buttonBackPosition">
-            <a href="#начало-страницы" class="buttonBack">Вернутсья вначало</a>
+    <!-- Footer -->
+
+    <footer class="bottomSide">
+        <p class="bottomSide__container">
+            <a href="#top" class="bottomSide__link">Back to Top</a>
         </p>
-        <p class="footer">Design by maxFadet</p>
+        <div class="bottomSide__container bottomSide__container--supreme">
+            <p>Designed by maxFadet</p>
+            <p>See more repositories on my <a class="bottomSide__link bottomSide__link--otherView"
+                    href="https://github.com/maxFadet?tab=repositories" target="_blank" rel="noopener noreferrer"
+                    title="My GitHub page">github page</a> (Will
+                open in a new tab)</p>
+        </div>
     </footer>
 </body>
 

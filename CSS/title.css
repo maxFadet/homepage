@@ -1,0 +1,19 @@
+.title__name {
+    margin: 20px;
+    margin-top: 170px;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    font-weight: normal;
+}
+
+.title__text {
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    text-indent: 30px;
+    margin: 100px auto;
+    padding: 30px;
+    max-width: 500px;
+    line-height: 2.3;
+}

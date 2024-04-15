@@ -7,6 +7,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed; /* Фиксируем позицию */
+    top: 0; /* Размещаем навигацию вверху страницы */
+    width: 100%; /* Занимаем всю ширину */
+    z-index: 1000; 
     }
 
 .navigation__list {
@@ -29,13 +33,8 @@
     color: #2766ae;
 }
 
-.buttonMenuResize {
+.navigation__button {
     border: none;
-    background: #424242;
+    background: rgb(229, 234, 165);
     border-radius: 10px;
-    margin: 0 auto;
-}
-
-.imageMenu {
-    width: 30px;
 }

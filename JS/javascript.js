@@ -1,71 +1,85 @@
-// // переключение стиля заголовка
+{
 
-// let mainTitle = document.querySelector(".mainTitle");
-// let mainTitleLarge = document.querySelector(".mainTitleLarge");
+  // Function that greets everyone who comes here
 
-// mainTitle.addEventListener("click", () => {
-//     mainTitle.classList.toggle("mainTitleLarge");
-// })
+  const welcome = () => {
+    console.log("Hi everybody who has come here")
+  }
 
-// тема сайта
+  // Here we are switching the page theme and changing the button content
 
-let buttonTheme = document.querySelector(".js-buttonTheme");;
-let changesWord = document.querySelector(".js-changesWord");
-let bodyStyle = document.querySelector(".bodyStyle");
+  const switchBackground = () => {
+    const bodyStyle = document.querySelector(".body");
+    const changesWord = document.querySelector(".js-changesWord");
+    bodyStyle.classList.toggle("body--theme");
+    changesWord.innerText = bodyStyle.classList.contains("body--theme") ? "to black" : "to light"
+  };
 
-buttonTheme.addEventListener("click", () => {
-    bodyStyle.classList.toggle("bodyStyle--dark");
-    if(bodyStyle.classList.contains("bodyStyle--dark")) {
-        changesWord.innerText = "темную"
-    } else {
-        changesWord.innerText = "светлую"
+  // This function initializes the theme button and adds a click handler to it
+
+  const init = () => {
+    const buttonTheme = document.querySelector(".js-buttonTheme");
+    buttonTheme.addEventListener("click", switchBackground);
+    welcome();
+  };
+
+  init();
+
+  // This function toggles the visibility of the navigation menu when the menu button is clicked
+
+  const toggleNavigationMenu = () => {
+    const navigation = document.querySelector(".js-navigationList");
+
+    navigation.style.display = navigation.style.display === "none" ? "block" : "none";
+  };
+
+  const initializeMenuButton = () => {
+    const buttonMenu = document.querySelector(".js-buttonMenu");
+    buttonMenu.addEventListener("click", toggleNavigationMenu);
+  };
+
+  initializeMenuButton();
+
+  // This function adjusts the visibility of the menu button and navigation menu depending on the window size
+
+  const adjustWindowSize = () => {
+    const navigation = document.querySelector(".js-navigationList");
+    const buttonMenu = document.querySelector(".js-buttonMenu");
+
+    const windowWidth = window.innerWidth;
+    buttonMenu.style.display = windowWidth < 747 ? "block" : "none";
+    navigation.style.display = windowWidth < 747 ? "none" : "flex";
+  };
+  adjustWindowSize();
+
+  window.addEventListener("load", adjustWindowSize);
+  window.addEventListener("resize", adjustWindowSize);
+
+  // Toggling the visibility of the navigation menu
+
+  const toggleNavigationVisibility = () => {
+    const navigation = document.querySelector(".js-navigationList");
+    navigation.classList.toggle("navigation__list--visible");
+  };
+
+  // This function controls the visibility of the navigation menu based on the window size
+
+  const handleResize = () => {
+    const navigation = document.querySelector(".js-navigationList");
+
+    if (window.innerWidth > 747 && navigation.classList.contains("navigation__list--visible")) {
+      navigation.classList.remove("navigation__list--visible");
     }
-})
+  };
 
-const buttonMenu = document.querySelector(".js-buttonMenu");
-const navigation = document.querySelector(".js-navigationList");
+  // This function adds event handlers for the menu button and window resize events
 
-// Добавляем обработчик события клика на кнопку меню
-buttonMenu.addEventListener("click", () => {
-  // Если навигационное меню скрыто, открываем его и меняем текст на кнопке
-  if (navigation.style.display === "none") {
-    navigation.style.display = "block";
-    // buttonMenu.textContent = "close";
-  } else {
-    // Если навигационное меню открыто, скрываем его и меняем текст на кнопке
-    navigation.style.display = "none";
-    // buttonMenu.textContent = "menu";
-  }
-});
+  const initializeMenu = () => {
+    const buttonMenu = document.querySelector(".js-buttonMenu");
+    buttonMenu.addEventListener("click", toggleNavigationVisibility);
+    window.addEventListener("resize", handleResize);
+  };
 
-// Функция, которая будет вызываться при изменении размеров окна
-function checkWindowSize() {
-  // Получаем ширину окна
-  const windowWidth = window.innerWidth;
+  initializeMenu();
 
-  // Если ширина окна меньше 768 пикселей, то показываем кнопку меню и скрываем навигационное меню
-  if (windowWidth < 747) {
-    buttonMenu.style.display = "block";
-    navigation.style.display = "none";
-    // buttonMenu.textContent = "menu";
-  } else {
-    // Если ширина окна больше или равна 768 пикселей, то скрываем кнопку меню и показываем навигационное меню
-    buttonMenu.style.display = "none";
-    navigation.style.display = "flex";
-  }
-}
-
-// Вызываем функцию checkWindowSize при загрузке страницы и при изменении размеров окна
-window.addEventListener("load", checkWindowSize);
-window.addEventListener("resize", checkWindowSize);
-
-
-buttonMenu.addEventListener("click", () => {
-  navigation.classList.toggle("navigation__list--visible");
-});
-
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 747 && navigation.classList.contains("navigation__list--visible")) {
-    navigation.classList.remove("navigation__list--visible");
-  }
-});
+};

@@ -12,7 +12,14 @@ It consists of several sections regarding my interests:
 
 In creating this page, I used languages such as **HTML, CSS, and JavaScript**.
 
+Also, technologies like Flexbox and ES6+ features have been applied.
+
 ## How does it work
 
 1. Here are the main interactions available on the page
-![Basic actions performed on the page](https://github.com/maxFadet/currency_calculator/blob/main/image/Converter.gif "Converter")
+
+![Basic actions performed on the page](https://github.com/maxFadet/homepage/blob/main/image/the-main-showing.gif "my blog")
+
+2. Here, you can see how the page looks on small screens, and how the navigation changes accordingly
+
+![Adaptation for narrow screens](https://github.com/maxFadet/homepage/blob/main/image/responsive.gif" responsive")

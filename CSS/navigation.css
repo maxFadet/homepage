@@ -7,17 +7,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed; /* Фиксируем позицию */
-    top: 0; /* Размещаем навигацию вверху страницы */
-    width: 100%; /* Занимаем всю ширину */
-    z-index: 1000; 
-    }
+}
 
 .navigation__list {
     display: block;
     list-style: none;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.navigation__list--visible {
+    display: flex;
 }
 
 .navigation__item {

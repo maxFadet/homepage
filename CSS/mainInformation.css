@@ -1,3 +1,4 @@
+
 .mainInformation {
     max-width: 1000px;
     margin: auto;
@@ -7,26 +8,6 @@
 .mainInformation--spaciousBox {
     margin: 110px auto;
     max-width: 1500px;
-}
-
-.title__name {
-    margin: 20px;
-    margin-top: 170px;
-    text-align: center;
-    font-size: 50px;
-    padding: 20px;
-    font-weight: normal;
-}
-
-.title__text {
-    font-family: 'Quicksand', sans-serif;
-    font-style: italic;
-    font-size: 20px;
-    text-indent: 30px;
-    margin: 100px auto;
-    padding: 30px;
-    max-width: 500px;
-    line-height: 2.3;
 }
 
 .mainInformation__container {
@@ -103,14 +84,13 @@
 
 
 .mainInformation__video {
-    width: 100%; /* Устанавливаем ширину видео на 100% для заполнения доступного пространства */
-    max-width: 500px; /* Устанавливаем максимальную ширину видео */
+    width: 100%;
+    max-width: 500px;
   }
 
   @media (max-width: 768px) {
-    /* Применяем стили для узких экранов (например, меньше 768 пикселей) */
     .mainInformation__video {
-      max-width: 500px; /* Уменьшаем максимальную ширину видео для узких экранов */
+      max-width: 500px;
     }
   }
 

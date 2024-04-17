@@ -11,3 +11,8 @@ It consists of several sections regarding my interests:
 * [Cooking recipes](https://maxfadet.github.io/homepage/#cooking_recipes)
 
 In creating this page, I used languages such as **HTML, CSS, and JavaScript**.
+
+## How does it work
+
+1. Here are the main interactions available on the page
+![Basic actions performed on the page](https://github.com/maxFadet/currency_calculator/blob/main/image/Converter.gif "Converter")

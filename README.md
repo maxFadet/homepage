@@ -22,4 +22,4 @@ Also, technologies like Flexbox and ES6+ features have been applied.
 
 2. Here, you can see how the page looks on small screens, and how the navigation changes accordingly
 
-![Adaptation for narrow screens](https://github.com/maxFadet/homepage/blob/main/image/responsive.gif) "responsive")
+![Adaptation for narrow screens](https://github.com/maxFadet/homepage/blob/main/image/responsive.gif" responsive")

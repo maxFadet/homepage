@@ -29,6 +29,11 @@
     flex-basis: 347px;
 }
 
+
+.mainInformation__TextInConteiner--replaceObject {
+    order: 1;
+  }
+
 .mainInformation__conteinerName {
     text-align: center;
     margin: 20px;

@@ -29,7 +29,6 @@
 
   const toggleNavigationMenu = () => {
     const navigation = document.querySelector(".js-navigationList");
-
     navigation.style.display = navigation.style.display === "none" ? "block" : "none";
   };
 
@@ -50,10 +49,12 @@
     buttonMenu.style.display = windowWidth < 747 ? "block" : "none";
     navigation.style.display = windowWidth < 747 ? "none" : "flex";
   };
-  adjustWindowSize();
 
+  const initializeEventHandlers = () =>
   window.addEventListener("load", adjustWindowSize);
   window.addEventListener("resize", adjustWindowSize);
+
+  initializeEventHandlers();
 
   // Toggling the visibility of the navigation menu
 

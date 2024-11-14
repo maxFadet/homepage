@@ -39,11 +39,19 @@
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   // Function initialization
   const init = () => {
     const buttonTheme = document.querySelector(".js-buttonTheme");
     const navigation = document.querySelector(".js-navigationList");
     const buttonMenu = document.querySelector(".js-buttonMenu");
+    const buttonScrollTop = document.querySelector(".js-buttonScrollTop");
 
     buttonTheme.addEventListener("click", () => {
       switchBackground();
@@ -53,6 +61,8 @@
     buttonMenu.addEventListener("click", () => {
       toggleNavigationMenu(navigation);
     });
+
+    buttonScrollTop.addEventListener("click", scrollToTop);
 
     window.addEventListener("load", () => {
       adjustWindowSize(navigation, buttonMenu);

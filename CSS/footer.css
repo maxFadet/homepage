@@ -1,19 +1,37 @@
 .bottomSide__container {
     text-align: center;
-    }
+}
 
 .bottomSide__container--supreme {
-   color: rgb(92, 92, 92);
-   margin: 0;
-   padding: 30px;
-   background-color: #ADADAD;
-   text-align: center;
-    }
+    color: rgb(92, 92, 92);
+    margin: 0;
+    padding: 30px;
+    background-color: #ADADAD;
+    text-align: center;
+}
+
+.bottomSide__button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #2766ae;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.bottomSide__button:hover {
+    opacity: 1;
+}
 
 .bottomSide__link {
     text-decoration: none;
     color: rgb(229, 234, 165);
-} 
+}
 
 .bottomSide__link--otherView {
     color: #2766ae;

@@ -37,4 +37,5 @@
     border: none;
     background: rgb(229, 234, 165);
     border-radius: 10px;
+    cursor: pointer;
 }

@@ -17,7 +17,7 @@
     padding: 30px;
     background: #212227;
     border-radius: 30px;
-    box-shadow: 0 0.25rem 3.75rem rgba(0,0,0,.4);
+    box-shadow: 0 0.25rem 3.75rem rgba(0, 0, 0, .4);
 }
 
 .mainInformation__container--noBorderRadius {
@@ -30,7 +30,7 @@
 
 .mainInformation__TextInConteiner--replaceObject {
     order: 1;
-  }
+}
 
 .mainInformation__conteinerName {
     text-align: center;
@@ -41,14 +41,14 @@
 .mainInformation__content {
     text-indent: 30px;
     text-align: justify;
- } 
+}
 
 .mainInformation__conteinerName--indentTop {
     margin: 50px;
 }
 
 .mainInformation__conteinerName--otherColor {
-    color:#2766ae;
+    color: #2766ae;
 }
 
 .mainInformation__image {
@@ -68,9 +68,9 @@
 .mainInformation__tableCaption {
     margin: 20px;
     font-size: 26px;
- }
+}
 
- .mainInformation__tableCell {
+.mainInformation__tableCell {
     border: 1px solid rgb(63 65 71);
     padding: 15px;
     text-align: center;
@@ -78,7 +78,7 @@
 }
 
 .mainInformation__tableCell--tableHeader {
-    background-color:  #11193733;
+    background-color: #11193733;
     font-weight: normal;
     padding: 15px;
 }
@@ -86,19 +86,19 @@
 .mainInformation__video {
     width: 100%;
     max-width: 500px;
-  }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .mainInformation__video {
-      max-width: 500px;
+        max-width: 500px;
     }
-  }
+}
 
-  .mainInformation__list {
+.mainInformation__list {
     line-height: 2.5;
     text-indent: 10px;
-  }
+}
 
-  .mainInformation__list--otherColor {
+.mainInformation__list--otherColor {
     color: rgb(229, 234, 165);
-  }
+}

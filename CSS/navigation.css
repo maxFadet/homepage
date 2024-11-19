@@ -3,7 +3,7 @@
     padding: 5px;
     font-size: 22px;
     font-weight: 700;
-    background: linear-gradient(180deg,#000,transparent);
+    background: linear-gradient(180deg, #000, transparent);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@
     text-decoration: none;
 }
 
-.navigation__link:hover{
+.navigation__link:hover {
     color: #2766ae;
 }
 

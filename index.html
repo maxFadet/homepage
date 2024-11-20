@@ -15,35 +15,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>Max's Blog</title>
+    <title>Max's Blog | Frontend Journey and Hobbies</title>
     <meta property="og:image" content="image/homepage_share.png">
     <link rel="icon" href="image/homepage_favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-
 </head>
 
 <body class="body">
 
     <nav id="top" class="navigation">
         <ul class="navigation__list js-navigationList">
-            <li class="navigation__item"><a href="#about-me" class="navigation__link">About me</a>
-            </li>
-            <li class="navigation__item"><a href="#my-hobbies" class="navigation__link">My hobbies</a>
-            </li>
-            <li class="navigation__item"><a href="#cooking-recipes" class="navigation__link">Cooking recipes</a>
-            </li>
-            <li class="navigation__item"><button class="navigation__button js-buttonTheme">Switch <span
-                        class="js-changesWord">to light</span> theme</button>
+            <li class="navigation__item"><a href="#about-me" class="navigation__link">About me</a></li>
+            <li class="navigation__item"><a href="#my-hobbies" class="navigation__link">My hobbies</a></li>
+            <li class="navigation__item"><a href="#cooking-recipes" class="navigation__link">Cooking recipes</a></li>
+            <li class="navigation__item">
+                <button class="navigation__button js-buttonTheme" aria-label="Switch to light theme">
+                    Switch <span class="js-changesWord">to light</span> theme
+                </button>
             </li>
         </ul>
     </nav>
 
     <div class="mobileMenu">
         <button class="mobileMenu__button js-buttonMenu">
-            <img class="mobileMenu__image" src="image/interface-setting-menu.png" alt="icon">
+            <img class="mobileMenu__image" src="image/interface-setting-menu.png" alt="Menu icon">
         </button>
     </div>
 
@@ -51,59 +49,66 @@
         <div class="mainInformation">
             <header class="title">
                 <h1 class="title__name">My blog</h1>
-                <p class="title__text">"Welcome to my website. This is my blog. I will be glad to share
-                    information about myself and also
+                <p class="title__text">
+                    Welcome to my website. This is my blog. I will be glad to share information about myself and also
                     take such a wonderful opportunity to show my knowledge in practice on this site. Of course I mean
-                    Frontend development."</p>
+                    Frontend development.
+                </p>
             </header>
             <article id="about-me" class="mainInformation__container">
                 <div class="mainInformation__TextInConteiner">
                     <h2 class="mainInformation__conteinerName">About me</h2>
-                    <p class="mainInformation__content">My name is Max. I am 30 years old. I live in Poland, Warsaw. In
-                        my spare time I spend time with my wife, drink coffee in Starbucks, walk in the park, shopping.
-                        I have a license Forklift truck operator. Do not work at the moment. I work hard to learn the
-                        basics of frontend development. This is my first experience in this field. Since I am a creative
-                        person so I have chosen this path.
+                    <p class="mainInformation__content">
+                        My name is Max. I am 30 years old. I live in Poland, Warsaw. In my spare time I spend time with
+                        my wife, drink coffee in Starbucks, walk in the park, shopping. I have a license Forklift truck
+                        operator. Do not work at the moment. I work hard to learn the basics of frontend development.
+                        This is my first experience in this field. Since I am a creative person so I have chosen this
+                        path.
                     </p>
                 </div>
-                <p><img class="mainInformation__image" src="image/in_centre_of_city.jpg" alt="Stare Miasto"></p>
+                <figure>
+                    <img class="mainInformation__image" src="image/in_centre_of_city.jpg" alt="Stare Miasto">
+                </figure>
             </article>
 
             <article>
                 <h2 id="my-hobbies" class="mainInformation__conteinerName mainInformation__conteinerName--indentTop">My
-                    hobbies
-                </h2>
+                    hobbies</h2>
                 <div class="mainInformation__container">
                     <div class="mainInformation__TextInConteiner">
                         <table class="mainInformation__table">
                             <caption class="mainInformation__tableCaption">My skills</caption>
-                            <tr>
+                            <thead>
+                                <tr>
                                 <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
                                     scope="col">Skill</th>
                                 <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
                                     scope="col">Level</th>
-                            </tr>
-                            <tr>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
                                 <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
                                     scope="row">English</th>
                                 <td class="mainInformation__tableCell">3/5</td>
-                            </tr>
-                            <tr>
+                                </tr>
+                                <tr>
                                 <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
                                     scope="row">Polish</th>
                                 <td class="mainInformation__tableCell">4/5</td>
-                            </tr>
-                            <tr>
+                                </tr>
+                                <tr>
                                 <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
                                     scope="row">Russian</th>
                                 <td class="mainInformation__tableCell">5/5</td>
-                            </tr>
-                            <tr>
+                                </tr>
+                                <tr>
                                 <th class="mainInformation__tableCell mainInformation__tableCell--tableHeader"
                                     scope="row">My PC knowledge
                                 </th>
                                 <td class="mainInformation__tableCell">5/5</td>
-                            </tr>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                     <div class="mainInformation__TextInConteiner">
@@ -112,7 +117,7 @@
                             Right now, I'm diligently learning English because it will be useful for work. I love yoga,
                             working out on the bars, and everything related to physical activity. I'm also passionate
                             about meditation and cooking something delicious 😄
-                        <p>
+                        </p>
                     </div>
                 </div>
             </article>
@@ -354,18 +359,20 @@
         </div>
     </main>
 
-    <footer class="bottomSide">
-        <div class="bottomSide__container">
-            <button class="bottomSide__button js-buttonScrollTop">Back to Top</button>
-        </div>
-        <div class="bottomSide__container bottomSide__container--supreme">
-            <p>Designed by maxFadet</p>
-            <p>See more repositories on my <a class="bottomSide__link bottomSide__link--otherView"
-                    href="https://github.com/maxFadet?tab=repositories" target="_blank" rel="noopener noreferrer"
-                    title="My GitHub page">github page</a> (Will
-                open in a new tab)</p>
-        </div>
-    </footer>
+        <footer class="bottomSide">
+            <div class="bottomSide__container">
+                <button class="bottomSide__button js-buttonScrollTop">Back to Top</button>
+            </div>
+            <div class="bottomSide__container bottomSide__container--supreme">
+                <p>Designed by maxFadet</p>
+                <p>See more repositories on my 
+                    <a class="bottomSide__link bottomSide__link--otherView" href="https://github.com/maxFadet?tab=repositories" 
+                        target="_blank" rel="noopener noreferrer" title="My GitHub page">GitHub page</a> 
+                    (Will open in a new tab)
+                </p>
+            </div>
+        </footer>
+    </main>
 </body>
 
 </html>

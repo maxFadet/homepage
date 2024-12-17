@@ -21,7 +21,11 @@
 }
 
 .mainInformation__container--noBorderRadius {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
     border-radius: 0;
+    box-sizing: border-box;
 }
 
 .mainInformation__TextInConteiner {

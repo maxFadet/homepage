@@ -9,6 +9,10 @@
     align-items: center;
 }
 
+.body--light .navigation {
+    background: linear-gradient(180deg, #383838, transparent);
+}
+
 .navigation__list {
     display: block;
     list-style: none;

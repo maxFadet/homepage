@@ -9,8 +9,9 @@
   const switchBackground = () => {
     const bodyStyle = document.querySelector(".body");
     const changesWord = document.querySelector(".js-changesWord");
-
+  
     bodyStyle.classList.toggle("body--theme");
+    bodyStyle.classList.toggle("body--light");
     changesWord.innerText = bodyStyle.classList.contains("body--theme") ? "to black" : "to light";
   };
 

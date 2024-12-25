@@ -9,7 +9,7 @@
   const switchBackground = () => {
     const bodyStyle = document.querySelector(".body");
     const changesWord = document.querySelector(".js-changesWord");
-  
+
     bodyStyle.classList.toggle("body--theme");
     bodyStyle.classList.toggle("body--light");
     changesWord.innerText = bodyStyle.classList.contains("body--theme") ? "to black" : "to light";
@@ -47,35 +47,53 @@
     });
   };
 
-  // Function initialization
+  const smoothScrollToSection = (event) => {
+    event.preventDefault(); // Prevent default anchor behavior
+    const targetId = event.target.getAttribute("href").substring(1); // Get the target section ID
+    const targetSection = document.getElementById(targetId);
+    const menuLinks = document.querySelectorAll(".js-navigationLink"); // Add selector for menu links
+
+    if (targetSection) {
+      targetSection.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  };
+
   const init = () => {
     const buttonTheme = document.querySelector(".js-buttonTheme");
     const navigation = document.querySelector(".js-navigationList");
     const buttonMenu = document.querySelector(".js-buttonMenu");
     const buttonScrollTop = document.querySelector(".js-buttonScrollTop");
-
+    const menuLinks = document.querySelectorAll(".js-navigationLink"); // Add selector for menu links
+  
     buttonTheme.addEventListener("click", () => {
       switchBackground();
       toggleNavigationVisibility(navigation);
     });
-
+  
     buttonMenu.addEventListener("click", () => {
       toggleNavigationMenu(navigation);
     });
-
+  
     buttonScrollTop.addEventListener("click", scrollToTop);
-
+  
+    // Add event listeners for menu items to handle smooth scrolling
+    menuLinks.forEach(link => {
+      link.addEventListener("click", smoothScrollToSection);
+    });
+  
     window.addEventListener("load", () => {
       adjustWindowSize(navigation, buttonMenu);
     });
-
+  
     window.addEventListener("resize", () => {
       handleResize(navigation, buttonMenu);
     });
-
+  
     welcome();
   };
-
+  
   init();
 
 };

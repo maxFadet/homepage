@@ -30,6 +30,7 @@
 
 .mainInformation__TextInConteiner {
     flex-basis: 347px;
+    margin-bottom: 20px;
 }
 
 .mainInformation__TextInConteiner--replaceObject {

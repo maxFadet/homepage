@@ -14,14 +14,27 @@
 }
 
 .navigation__list {
-    display: block;
+    max-height: 0;
+    overflow: hidden;
     list-style: none;
     justify-content: center;
     flex-wrap: wrap;
+    transition: max-height 0.3s ease-in-out;
 }
 
 .navigation__list--visible {
-    display: flex;
+    max-height: 500px;
+}
+
+@media (min-width: 747px) {
+    .navigation__list {
+        max-height: none;
+        display: flex;
+    }
+
+    .navigation__list--visible {
+        max-height: none;
+    }
 }
 
 .navigation__item {

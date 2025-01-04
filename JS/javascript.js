@@ -1,5 +1,4 @@
 {
-
   const welcome = () => {
     console.log("Hi everybody who has come here");
   };
@@ -14,23 +13,17 @@
   };
 
   const toggleNavigationMenu = (navigation) => {
-    navigation.style.display = navigation.style.display === "none" ? "block" : "none";
+    navigation.classList.toggle("navigation__list--visible");
   };
 
   const adjustWindowSize = (navigation, buttonMenu) => {
     const windowWidth = window.innerWidth;
     buttonMenu.style.display = windowWidth < 747 ? "block" : "none";
-    navigation.style.display = windowWidth < 747 ? "none" : "flex";
-  };
 
-  const toggleNavigationVisibility = (navigation) => {
-    navigation.classList.toggle("navigation__list--visible");
-  };
-
-  const handleResize = (navigation, buttonMenu) => {
-    adjustWindowSize(navigation, buttonMenu);
-    if (window.innerWidth > 747 && navigation.classList.contains("navigation__list--visible")) {
-      navigation.classList.remove("navigation__list--visible");
+    if (windowWidth >= 747) {
+        navigation.classList.add("navigation__list--visible");
+    } else {
+        navigation.classList.remove("navigation__list--visible");
     }
   };
 
@@ -45,7 +38,6 @@
     event.preventDefault();
     const targetId = event.target.getAttribute("href").substring(1);
     const targetSection = document.getElementById(targetId);
-    const menuLinks = document.querySelectorAll(".js-navigationLink");
 
     if (targetSection) {
       targetSection.scrollIntoView({
@@ -63,7 +55,6 @@
 
     buttonTheme.addEventListener("click", () => {
       switchBackground();
-      toggleNavigationVisibility(navigation);
     });
 
     buttonMenu.addEventListener("click", () => {
@@ -81,12 +72,11 @@
     });
 
     window.addEventListener("resize", () => {
-      handleResize(navigation, buttonMenu);
+      adjustWindowSize(navigation, buttonMenu);
     });
 
     welcome();
   };
 
   init();
-
-};
+}

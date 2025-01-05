@@ -52,7 +52,31 @@
 
 .navigation__button {
     border: none;
-    background: rgb(229, 234, 165);
-    border-radius: 10px;
+    background:none;
+}
+
+.toggle {
+    width: 45px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0 3px;
     cursor: pointer;
+    position: relative;
+}
+
+.toggle__circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+    transition: background-color 0.3s, transform 0.3s;
+    transform: translateX(0);
+}
+
+.body--light .toggle__circle {
+    background-color: #ffffff;
+    transform: translateX(25px);
 }

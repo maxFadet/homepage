@@ -5,11 +5,14 @@
 
   const switchBackground = () => {
     const bodyStyle = document.querySelector(".body");
-    const changesWord = document.querySelector(".js-changesWord");
+    const toggleCircle = document.querySelector(".js-toggleCircle");
 
     bodyStyle.classList.toggle("body--theme");
     bodyStyle.classList.toggle("body--light");
-    changesWord.innerText = bodyStyle.classList.contains("body--theme") ? "to black" : "to light";
+
+    toggleCircle.style.backgroundColor = bodyStyle.classList.contains("body--theme")
+      ? "#ffffff"
+      : "#000000";
   };
 
   const toggleNavigationMenu = (navigation) => {
@@ -21,16 +24,16 @@
     buttonMenu.style.display = windowWidth < 747 ? "block" : "none";
 
     if (windowWidth >= 747) {
-        navigation.classList.add("navigation__list--visible");
+      navigation.classList.add("navigation__list--visible");
     } else {
-        navigation.classList.remove("navigation__list--visible");
+      navigation.classList.remove("navigation__list--visible");
     }
   };
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
@@ -41,7 +44,7 @@
 
     if (targetSection) {
       targetSection.scrollIntoView({
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
   };
@@ -53,9 +56,7 @@
     const buttonScrollTop = document.querySelector(".js-buttonScrollTop");
     const menuLinks = document.querySelectorAll(".js-navigationLink");
 
-    buttonTheme.addEventListener("click", () => {
-      switchBackground();
-    });
+    buttonTheme.addEventListener("click", switchBackground);
 
     buttonMenu.addEventListener("click", () => {
       toggleNavigationMenu(navigation);
@@ -63,7 +64,7 @@
 
     buttonScrollTop.addEventListener("click", scrollToTop);
 
-    menuLinks.forEach(link => {
+    menuLinks.forEach((link) => {
       link.addEventListener("click", smoothScrollToSection);
     });
 

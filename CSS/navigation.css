@@ -59,13 +59,18 @@
 .toggle {
     width: 45px;
     height: 25px;
-    background-color: #ccc;
+    background-color: #2766ae;
     border-radius: 25px;
     display: flex;
+    border: 2px solid #ffffffb0;
     align-items: center;
     padding: 0 3px;
     cursor: pointer;
     position: relative;
+}
+
+.body--borderLight .toggle {
+    border-color: rgb(161, 161, 161);
 }
 
 .toggle__circle {

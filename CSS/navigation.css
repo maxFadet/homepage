@@ -68,13 +68,13 @@
     cursor: pointer;
     position: relative;
     transition: background-color 0.3s, border-color 0.3s;
-  }
-  
-  .body--borderLight .toggle {
+}
+
+.body--borderLight .toggle {
     border-color: rgb(161, 161, 161);
-  }
-  
-  .toggle__circle {
+}
+
+.toggle__circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -84,20 +84,20 @@
     justify-content: center;
     align-items: center;
     transform: translateX(0);
-  }
-  
-  .body--light .toggle__circle {
+}
+
+.body--light .toggle__circle {
     background-color: #ffffff;
     transform: translateX(25px);
-  }
-  
-  .toggle__icon {
+}
+
+.toggle__icon {
     fill: #ffffff;
     width: 14px;
     height: 14px;
     transition: fill 0.3s;
-  }
-  
-  .body--light .toggle__icon {
+}
+
+.body--light .toggle__icon {
     fill: #000000;
-  }
+}

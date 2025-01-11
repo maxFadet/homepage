@@ -10,6 +10,7 @@
     bodyStyle.classList.toggle("body--theme");
     bodyStyle.classList.toggle("body--light");
     bodyStyle.classList.toggle("body--borderLight");
+    bodyStyle.classList.toggle("body--linkLighter")
 
     toggleCircle.style.backgroundColor = bodyStyle.classList.contains("body--theme")
       ? "#ffffff"

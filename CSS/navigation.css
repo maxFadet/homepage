@@ -50,6 +50,10 @@
     color: #2766ae;
 }
 
+.body--linkLighter .navigation__link:hover {
+    color: #5f9fed;
+}
+
 .navigation__button {
     border: none;
     background: none;

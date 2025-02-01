@@ -99,6 +99,7 @@
 }
 
 @media (max-width: 768px) {
+
     .mainInformation__video {
         max-width: 500px;
     }

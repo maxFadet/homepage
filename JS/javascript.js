@@ -22,7 +22,7 @@
   };
 
   const adjustWindowSize = (navigation, buttonMenu) => {
-    const windowWidth = window.innerWidth;
+  const windowWidth = window.innerWidth;
     buttonMenu.style.display = windowWidth < 747 ? "block" : "none";
 
     if (windowWidth >= 747) {

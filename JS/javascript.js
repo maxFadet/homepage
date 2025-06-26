@@ -53,7 +53,7 @@
   };
 
   const init = () => {
-    const buttonTheme = document.querySelector(".js-buttonTheme");
+  const buttonTheme = document.querySelector(".js-buttonTheme");
   const navigation = document.querySelector(".js-navigationList");
     const buttonMenu = document.querySelector(".js-buttonMenu");
     const buttonScrollTop = document.querySelector(".js-buttonScrollTop");

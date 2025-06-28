@@ -55,7 +55,7 @@
   const init = () => {
   const buttonTheme = document.querySelector(".js-buttonTheme");
   const navigation = document.querySelector(".js-navigationList");
-    const buttonMenu = document.querySelector(".js-buttonMenu");
+  const buttonMenu = document.querySelector(".js-buttonMenu");
     const buttonScrollTop = document.querySelector(".js-buttonScrollTop");
     const menuLinks = document.querySelectorAll(".js-navigationLink");
 

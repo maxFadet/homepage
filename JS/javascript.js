@@ -65,7 +65,6 @@
     });
 
     buttonScrollTop.addEventListener("click", scrollToTop);
-
     menuLinks.forEach((link) => {
       link.addEventListener("click", smoothScrollToSection);
     });

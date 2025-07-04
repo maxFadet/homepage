@@ -39,7 +39,7 @@
   };
 
   const smoothScrollToSection = (event) => {
-    
+  
     event.preventDefault();
     const targetId = event.target.getAttribute("href").substring(1);
     const targetSection = document.getElementById(targetId);

@@ -7,6 +7,7 @@
     const bodyStyle = document.querySelector(".body");
     const toggleCircle = document.querySelector(".js-toggleCircle");
 
+
     bodyStyle.classList.toggle("body--theme");
     bodyStyle.classList.toggle("body--light");
     bodyStyle.classList.toggle("body--borderLight");

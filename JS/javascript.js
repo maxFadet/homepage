@@ -4,7 +4,7 @@
   };
 
   const switchBackground = () => {
-    const bodyStyle = document.querySelector(".body");
+  const bodyStyle = document.querySelector(".body");
     const toggleCircle = document.querySelector(".js-toggleCircle");
 
 

@@ -3,6 +3,7 @@
     console.log("Hi everybody who has come here");
   };
 
+
   const switchBackground = () => {
   const bodyStyle = document.querySelector(".body");
   const toggleCircle = document.querySelector(".js-toggleCircle");

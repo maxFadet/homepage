@@ -58,7 +58,6 @@
   const buttonScrollTop = document.querySelector(".js-buttonScrollTop");
   const menuLinks = document.querySelectorAll(".js-navigationLink");
 
-
     buttonTheme.addEventListener("click", switchBackground);
     buttonMenu.addEventListener("click", () => {
       toggleNavigationMenu(navigation);

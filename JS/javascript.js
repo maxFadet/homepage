@@ -76,7 +76,6 @@
       adjustWindowSize(navigation, buttonMenu);
     });
 
-
     welcome();
   };
 

@@ -51,7 +51,6 @@
     }
   };
 
-
   const init = () => {
   const buttonTheme = document.querySelector(".js-buttonTheme");
   const navigation = document.querySelector(".js-navigationList");

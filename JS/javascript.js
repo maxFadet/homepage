@@ -38,6 +38,7 @@
     });
   };
 
+
   const smoothScrollToSection = (event) => {
 
     event.preventDefault();

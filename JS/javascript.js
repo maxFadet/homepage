@@ -16,6 +16,7 @@
       : "#000000";
   };
 
+
   const toggleNavigationMenu = (navigation) => {
     navigation.classList.toggle("navigation__list--visible");
   };

@@ -78,6 +78,5 @@
     welcome();
     
   };
-
   init();
 }

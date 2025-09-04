@@ -75,6 +75,7 @@
     window.addEventListener("resize", () => {
       adjustWindowSize(navigation, buttonMenu);
     });
+    
     welcome();
     
   };

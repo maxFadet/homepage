@@ -78,5 +78,4 @@
     welcome();
   };
   init();
-
 }

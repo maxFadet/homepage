@@ -77,5 +77,5 @@
     });
     welcome();
   };
-  init(); 
+  init();
 }
